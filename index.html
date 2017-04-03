@@ -26,10 +26,11 @@
 </nav>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Skills</a>
-  <a href="#">Projects</a>
-  <a href="#">Contact</a>
+  <a href="#home" onclick="closeNav()">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
 </div>
 <header class="home" id="home"></header>
 <section class="about" id="about"><h1>About me</h1></section>
@@ -37,8 +38,10 @@
 <section class="projects" id="projects"><h1>Past Projects</h1></section>
 <section class="contact" id="contact"><h1>Contact Me</h1></section>
 <section class="foot" id="foot"><h1>footer</h1></section>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
+<div id="sideNav-button">
+<i class="fa fa-code-fork" aria-hidden="true" onclick="openNav()"></i>
+</div>
 <script src="./scripts/sidenav.js">
 </script>
 </body>
