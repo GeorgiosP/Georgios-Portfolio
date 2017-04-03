@@ -1,5 +1,4 @@
-
-const domReady = function(callback) {
+const domReady = function (callback) {
     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
 };
 
@@ -7,15 +6,22 @@ const domReady = function(callback) {
  * Will grab the scroll location and if its not 
  * 0 will show the side nav button
  */
-domReady(function(){
+domReady(function () {
+    const sideButton = document.querySelector('.sideNav-button');
+    const sideButtonIcon = document.querySelector('.fa-bars');
     window.addEventListener('scroll', function () {
         let scrollPosition = document.body.scrollTop
-        const sideButton = document.getElementById("sideNav-button");
+
+
 
         if (scrollPosition == 0) {
-            sideButton.style.visibility = "hidden";
+      
+            sideButton.classList.remove("fade")
+            sideButtonIcon.classList.remove("fade")
         } else {
-            sideButton.style.visibility = "visible";
+
+            sideButton.classList.add("fade")
+            sideButtonIcon.classList.add("fade")
 
         }
 
@@ -27,7 +33,7 @@ domReady(function(){
 
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "30%";
+    document.getElementById("mySidenav").style.width = "35%";
 }
 
 function closeNav() {

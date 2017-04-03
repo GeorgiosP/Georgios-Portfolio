@@ -1,32 +1,35 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
+
+header{
+    
+    display: flex; 
+    position: relative;
+    background-image: url('../assets/gifs/coding.gif');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; 
+    color: rgba(255, 255, 255, 0.4);
+    z-index: 1; 
 }
+
+header .header-content{
+    opacity: 1;
+ 
+} 
+
 
 section {
-    height: 100%;
-    margin: 3%;
+    
+    margin: 7%;
+    /*transform: rotate(-10deg) scale(1); */
+    background: rgba(0, 145, 255, 0.6);
 }
 
-section:nth-child(1) {
-    background: lightblue;
-}
 
-section:nth-child(2) {
-    background: lightgreen;
-}
-
-section:nth-child(3) {
-    background: purple;
-}
-
-section:nth-child(4) {
-    background: red;
-}
-
-section:nth-child(5) {
-    background: yellow;
+section .section-content{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    /*transform: rotate(10deg);*/
 }
 
 nav {
@@ -34,15 +37,16 @@ nav {
     justify-content: center;
     padding: 0 0 0 0;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.4);
     z-index: 999;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 nav .pageNav li {
     padding: 20px;
     list-style-type: none;
     text-transform: uppercase;
+    
 }
 
 nav .pageNav {
@@ -54,7 +58,7 @@ li a {
     display: block;
     margin: 0%;
     padding: 0%;
-    color: rgba(0, 145, 255, 0.6);
+    color: rgba(#00d1b2, 0.6);
     transition: all 250ms ease-in-out;
 }
 
@@ -69,7 +73,7 @@ li a {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    text-align:center;
+    text-align: center;
 }
 
 .sidenav a {
@@ -79,10 +83,9 @@ li a {
     color: #818181;
     display: block;
     transition: 0.3s
-
 }
 
-.sidenav a:hover{
+.sidenav a:hover {
     color: #f1f1f1;
 }
 
@@ -95,13 +98,49 @@ li a {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-.sideNav-button{
-    position: fixed; 
-    bottom: 50%; 
-    left: 0%; 
-    padding: 10px;
+.sideNav-button {
+    position: fixed;
+    display: flex; 
+    bottom: 94%;
+    left: 0%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    
 }
+
+
+
+.faded {
+opacity: 0; 
+   transition: opacity 0.2s ease-in;
+    -ms-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+    -webkit-transition: opacity 0.2s ease-in;
+}
+
+
+
+.fade{
+opacity: 1;
+    transition: opacity 0.6s ease-out;
+    -ms-transition: opacity 0.6s ease-out;
+    -moz-transition: opacity 0.6s ease-out;
+    -webkit-transition: opacity 0.6s ease-out;
+}
+
+
+
+
+
+
+
+
