@@ -7,7 +7,7 @@ const domReady = function(callback) {
  * Will grab the scroll location and if its not 
  * 0 will show the side nav button
  */
-document.domReady(function(){
+domReady(function(){
     window.addEventListener('scroll', function () {
         let scrollPosition = document.body.scrollTop
         const sideButton = document.getElementById("sideNav-button");
