@@ -1,3 +1,4 @@
+const windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth); 
 const domReady = function (callback) {
     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
 };
@@ -33,7 +34,10 @@ domReady(function () {
 
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "35%";
+    if(windowWidth >= 900){
+    document.getElementById("mySidenav").style.width = "35%";}
+    else
+    document.getElementById("mySidenav").style.width = "100%"
 }
 
 function closeNav() {
