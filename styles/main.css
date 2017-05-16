@@ -1,23 +1,32 @@
-
+html{
+    overflow: none;
+}
 header{
-    
     display: flex; 
     justify-content: center; 
     flex-flow: row; 
     position: relative;
-    background-image: url('../assets/gifs/map.gif');
-    background-color:  rgba(0, 0, 0, .5);
+    /*background-image: url('../assets/gifs/coding.gif');*/
+    /*background-color:  rgba(0, 0, 0, .5);*/
     background-position: center;
     background-size: cover;
     overflow: hidden; 
-    color: rgba(255, 255, 255, 0.4);
-    z-index: 1; 
-    height: 40vh;
+    /*color: rgba(255, 255, 255, 0.4);*/
+    height: 90vh;
+    opacity: 0.4;
+    background: #071C7F;
+}
+h1#name{
+    font-size: 5em; 
+    color: #00d1b2;
+
 }
 
+
 header .header-content{
-    padding: 20% 0% 10% 0%;
+    width: 100%; 
     text-align: center;
+    margin: 33% 0% 5% 0%;
     
   
  
@@ -65,7 +74,6 @@ li a {
     display: block;
     margin: 0%;
     padding: 0%;
-    color: rgba(#00d1b2, 0.6);
     transition: all 250ms ease-in-out;
 }
 
@@ -158,7 +166,7 @@ h1.section-title{
 
 
 section.skills{
-     background: rgba(0, 145, 255, 0.4);
+     background: rgba(65, 217, 194, 0.4);
      transform: rotate(-8deg) scale(1.2);
      padding: 15% 5% 15% 5%; 
 }
@@ -169,6 +177,10 @@ div.section-content.skills{
 
 h1#skills{
     transform: rotate(8deg)
+}
+
+div#body-wrapper{
+    overflow-x: hidden;
 }
 
 
