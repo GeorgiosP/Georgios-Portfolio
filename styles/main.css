@@ -11,7 +11,7 @@ header {
     /*background-color:  rgba(0, 0, 0, .5);*/
     overflow: hidden;
     /*color: rgba(255, 255, 255, 0.4);*/
-    height: 90vh;
+    height: 100vh;
   
     
 }
@@ -26,7 +26,7 @@ h1#name {
 div.header-content {
     width: 100%;
     text-align: center;
-    margin: 12% 0% 5% 0%;
+    margin: 14% 0% 5% 0%;
     position: absolute;
 }
 div#particles-js{
@@ -134,7 +134,7 @@ li a {
     bottom: 94%;
     left: 0%;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 2px;
     z-index: 1;
 }
