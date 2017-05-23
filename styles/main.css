@@ -37,6 +37,8 @@ div#particles-js{
 a.button.is-primary{
      transition: background-color 450ms ease-in-out;
      opacity: 0.7;
+    filter: grayscale(40%);
+     
 }
 
 a.button.is-primary:hover{
