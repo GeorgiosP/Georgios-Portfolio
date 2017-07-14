@@ -19,6 +19,7 @@ header {
 h1#name {
     font-size: 5em;
     color: rgba(0, 209, 178, 0.7);
+    filter: grayscale(40%)
 
      
 }
@@ -36,7 +37,7 @@ div#particles-js{
 
 a.button.is-primary{
      transition: background-color 450ms ease-in-out;
-     opacity: 0.7;
+     opacity: 0.9;
     filter: grayscale(40%);
      
 }
