@@ -1,7 +1,7 @@
 html {
     overflow: none;
 }
-
+/*Header CSS*/
 header {
     display: flex;
     justify-content: center;
@@ -58,6 +58,7 @@ section .section-content {
     justify-content: center;
     /*transform: rotate(10deg);*/
 }
+/*Nav Section*/
 
 nav {
     display: flex;
@@ -112,6 +113,7 @@ li a {
 
 .sidenav a:hover {
     color: #f1f1f1;
+    
 }
 
 .sidenav .closebtn {
@@ -140,7 +142,9 @@ li a {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 2px;
     z-index: 1;
+    
 }
+
 
 .faded {
     opacity: 0;
@@ -158,10 +162,6 @@ li a {
     -webkit-transition: opacity 0.6s ease-out;
 }
 
-.fa.fa-code-fork {
-    color: white;
-    font-size: 120px;
-}
 
 div.column {
     text-align: center;
@@ -187,4 +187,31 @@ h1#skills {
 
 div#body-wrapper {
     overflow-x: hidden;
+}
+/* About me */
+p#AboutMePara{
+    font-weight: 500;
+    font-size: 24pt;
+}
+/* Contact form  */
+form#contact-form{
+    display: block;
+    margin: 0 auto;
+    width: 50vw;    
+    
+}
+h1.contact{
+    text-align: center;
+    font-weight: 500;
+    font-size: 21pt;
+    margin-bottom: 20px;
+}
+
+div#contactDiv{
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.button-centered{
+    text-align: center;
 }

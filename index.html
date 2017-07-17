@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Georgios Psarakis portfolio site, Full Stack Developer">
+    <meta name="description" content="Georgios Psarakis Portfolio Site, Full Stack Developer">
     <meta name="author" content="Georgios Psarakis">
-    
+
     <title>Georgios Psarakis</title>
 
     <!--CSS / FONT links-->
@@ -17,94 +17,121 @@
 </head>
 
 <body>
-<div id="body-wrapper">
-    <nav id="nav">
+    <div id="body-wrapper">
+        <nav id="nav">
 
-        <ul class="pageNav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <ul class="pageNav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    </nav>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#home" onclick="closeNav()">Home</a>
-        <a href="#about" onclick="closeNav()">About</a>
-        <a href="#skills" onclick="closeNav()">Skills</a>
-        <a href="#projects" onclick="closeNav()">Projects</a>
-        <a href="#contact" onclick="closeNav()">Contact</a>
-    </div>
-    <a class="sideNav-button faded" onclick="openNav()">
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#skills" onclick="closeNav()">Skills</a>
+            <a href="#projects" onclick="closeNav()">Projects</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+        <a class="sideNav-button faded" onclick="openNav()">
 
         <i class="fa fa-bars faded" aria-hidden="true"></i>
 
     </a>
-      
-    <header class="home" id="home">
-       
-        <div id="particles-js"></div>
-        <div class="header-content">
+
+        <header class="home" id="home">
+
+            <div id="particles-js"></div>
+            <div class="header-content">
                 <h1 id="name">Georgios Psarakis</h1>
                 <a class="button is-primary">Contact Me</a>
                 <a class="button is-primary">My Github</a>
-        </div>
-  
-    </header>
-     
-    <section class="about" id="about">
-        <h1 class="section-title">About me</h1>
-        <div class="hero-body section-content">
-
-            <div class="column is-two-thirds"></div>
-            <div class="column">
-                <p>Hello the names Georgios, Currently finishing up computer programming at Georgian College, I have
-                    a keen eye for software development. I'm always looking to brush up on my design skills, and love to
-                    develop everything javascript!</p>
-                <small>Project managment and version control included!</small>
             </div>
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <h1 id="skills" class="section-title">Skills</h1>
-        <div class="hero-body section-content skills">
-            <div class="column">Backend Development</div>
-            <div class="column">Frontend Development</div>
-            <div class="column">Project Managment</div>
-            <div class="column">Design</div>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-    
-        <div class="hero-body section-content">
-            <div class="column">The Spot</div> 
-            <div class="column">GCMakers</div>
-            <div class="column">Project X</div>
-        </div>
 
-    </section>
-    <section class="contact" id="contact">
-        <div class="hero-body section-content">
-            <h1>Contact Me</h1>
-        
-        </div>
+        </header>
 
-    </section>
-    <section class="foot" id="foot">
-        <div class="section-content">
-            <h1>footer</h1>
-        </div>
+        <section class="about" id="about">
+            <h1 class="section-title">About me</h1>
+            <div class="hero-body section-content">
 
-    </section>
+                <div class="column is-two-thirds">
+
+                </div>
+
+                <div class="column">
+                    <p id="AboutMePara">Hello the names Georgios, Currently finishing up computer programming at Georgian College, I have a keen
+                        eye for software development. I'm always looking to brush up on my design skills, and love to develop
+                        everything javascript!</p>
+                    <small>Project managment and version control included!</small>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h1 id="skills" class="section-title">Skills</h1>
+            <div class="hero-body section-content skills">
+                <div class="column">Backend Development</div>
+                <div class="column">Frontend Development</div>
+                <div class="column">Project Managment</div>
+                <div class="column">Design</div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+
+            <div class="hero-body section-content">
+                <div class="column">The Spot</div>
+                <div class="column">GCMakers</div>
+                <div class="column">Project X</div>
+            </div>
+
+        </section>
+        <section class="contact" id="contact">
+            <div id="contactDiv" class="hero-body section-content">
+                <h1 class="contact">Contact Me</h1>
+                <form id="contact-form" action="http://httpbin.org/post" method="post">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <p class="control">
+                            <input class="input" type="text" placeholder="Enter Your Name Here">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <p class="control">
+                            <input class="input" type="email" placeholder="Enter Your Email Here">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label"></label>
+                        <p class="control">
+                            <textarea class="textarea" placeholder="Inquire Here"></textarea>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="button-centered control">
+                            <button id="form-submit" class="button is-primary">Submit</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section class="foot" id="foot">
+            <div class="section-content">
+                <h1>footer</h1>
+            </div>
+
+        </section>
 
 
-    <script src="./scripts/sidenav.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./scripts/particles.js"></script>
-</div>
+        <script src="./scripts/sidenav.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="./scripts/particles.js"></script>
+    </div>
 </body>
 
 </html>
