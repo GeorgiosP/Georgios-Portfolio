@@ -23,7 +23,6 @@ function doScrolling(element, duration) {
 		// Get percent of completion in range [0, 1].
     var percent = Math.min(time / duration, 1)
     // Apply the easing.
-    // It can cause bad-looking slow frames in browser performance tool, so be careful.
     percent = easing(percent)
 
     window.scrollTo(0, startingY + diff * percent)

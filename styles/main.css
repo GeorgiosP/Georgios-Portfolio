@@ -23,6 +23,7 @@ header {
 a.navButton{
     transition: color 450ms ease-in-out;
     color: rgba(7,28,127,0.7);
+    font-weight: 600;
 }
 a.navButton:hover{
     color: rgba(72, 95, 203, 0.7);
@@ -182,24 +183,64 @@ div.column {
 
 h1.section-title {
     text-align: center;
+    padding-bottom: 30px; 
+    font-size: 21pt;
 }
 
+/*Skills section*/
 section.skills {
-    background: rgba(65, 217, 194, 0.4);
+    background: rgba(7, 28, 127, 0.4);
     transform: rotate(-8deg) scale(1.2);
     padding: 15% 5% 15% 5%;
 }
 
-div.section-content.skills {
+div.skills {
     transform: rotate(8deg);
 }
 
 h1#skills {
-    transform: rotate(8deg)
+    transform: rotate(8deg);
+    padding-bottom: 30px;
+    font-size: 21pt;
 }
 
 div#body-wrapper {
     overflow-x: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul.skills-list{
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 40px 0 40px;
+}
+.skills-list img{
+    width: 12vw; 
+    height: 12vw;
+    border-radius: 50% 50%;
+}
+/*Projects section*/
+section.projects {
+    margin-top: 22%;
+    background: rgba(133, 48, 21, 0.4);
+    transform: rotate(8deg) scale(1.2);
+    padding: 15% 5% 15% 5%;
+}
+
+div.projects {
+    transform: rotate(-8deg);
+}
+
+h1#projects {
+    transform: rotate(-8deg);
+    padding-bottom: 30px;
+    font-size: 21pt;
 }
 /* About me */
 p#AboutMePara{
