@@ -74,6 +74,7 @@ section .section-content {
 }
 /*Nav Section*/
 
+
 nav {
     display: flex;
     justify-content: center;
@@ -82,6 +83,15 @@ nav {
     z-index: 999;
     position: relative;
     background-color: rgba(7,209,178,0.4);
+}
+
+nav.scroll{
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    animation: nav-animation 700ms ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 nav .pageNav li {
@@ -101,6 +111,12 @@ li a {
     padding: 0%;
     transition: all 250ms ease-in-out;
 }
+@keyframes nav-animation{
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*burger menu*/
 
 .sidenav {
     height: 100%;
@@ -168,6 +184,8 @@ li a {
     -webkit-transition: opacity 0.2s ease-in;
 }
 
+
+
 .fade {
     opacity: 1;
     transition: opacity 0.6s ease-out;
@@ -182,13 +200,13 @@ div.column {
 }
 
 h1.section-title {
-    text-align: center;
-    padding-bottom: 30px; 
+    text-align: center; 
     font-size: 21pt;
 }
 
 /*Skills section*/
 section.skills {
+    margin-top: 10%;
     background: rgba(7, 28, 127, 0.4);
     transform: rotate(-8deg) scale(1.2);
     padding: 15% 5% 15% 5%;
@@ -246,6 +264,9 @@ h1#projects {
 p#AboutMePara{
     font-weight: 500;
     font-size: 24pt;
+}
+section.about{
+    padding: 2% 0% 7% 0%;
 }
 /* Contact form  */
 form#contact-form{

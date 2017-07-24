@@ -35,3 +35,9 @@ function doScrolling(element, duration) {
 }
 
 document.getElementById('contactMe').addEventListener('click', doScrolling.bind(null, '#contact', 800))
+document.getElementById('homeLink').addEventListener('click', doScrolling.bind(null, '#home', 800))
+document.getElementById('skillsLink').addEventListener('click', doScrolling.bind(null, '#skills', 800))
+document.getElementById('aboutLink').addEventListener('click', doScrolling.bind(null, '#about', 800))
+document.getElementById('projectsLink').addEventListener('click', doScrolling.bind(null, '#projects', 800))
+document.getElementById('contactLink').addEventListener('click', doScrolling.bind(null, '#contact', 800))
+
