@@ -11,14 +11,13 @@ domReady(function () {
     let mainNav = document.getElementById('nav')
     let sideButton = document.querySelector('.sideNav-button')
     let sideButtonIcon = document.querySelector('.fa-bars')
-    if(windowWidth >= 900){
+    if (windowWidth >= 900) {
         document.getElementById('mySidenav').style.display = 'none'
         sideButton.style.display = 'none'
-    }
-    else if(windowWidth <= 899){
+    } else if (windowWidth <= 899) {
         mainNav.style.display = 'none'
     }
-    
+
     window.addEventListener('scroll', function () {
         let scrollPosition = document.body.scrollTop
 
