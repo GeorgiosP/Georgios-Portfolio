@@ -334,7 +334,11 @@ button#form-submit:hover {
 
 
 /*Fotoer styles*/
-
+p.social-links i{
+    font-size: 34px;
+    padding: 1%;
+    
+}
 section.foot {
     margin: 0rem 0rem 0rem 0rem;
 }
