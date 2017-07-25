@@ -56,7 +56,7 @@
         </header>
 
         <section class="about" id="about">
-          
+
             <div class="hero-body section-content">
 
                 <div class="column is-two-thirds">
@@ -64,15 +64,15 @@
                 </div>
 
                 <div class="column">
-                    <p id="AboutMePara">Welcome To My Portfolio! Currently finishing up computer programming at Georgian College, I have a keen
+                    <p id="AboutMePara">Welcome To My Portfolio! Here is abit about myself, I have a keen
                         eye for software development, I'm always looking to brush up on my design skills, and love to develop
                         everything JavaScript!</p>
                     <small>Project managment and version control included</small>
                 </div>
             </div>
         </section>
+        <div id="skills"></div>
         <section class="skills">
-            <div id="skills"></div>
             <h1 id="skills" class="section-title">My Skills</h1>
             <div class="hero-body skills">
                 <ul class="skills-list">
@@ -96,8 +96,9 @@
             </div>
             <div class="divider"></div>
         </section>
+        <div id="projects"></div>
         <section class="projects">
-            <div id="projects"></div>
+
             <h1 id="projects" class="section-title">Past Projects</h1>
             <div class="hero-body projects section-content">
                 <div class="column">The Spot</div>
@@ -107,10 +108,11 @@
             </div>
 
         </section>
-        <section class="contact" id="contact">
+        <section class="contact">
+            <div id="contact"></div>
             <div id="contactDiv" class="hero-body section-content">
                 <h1 class="contact">Contact Me</h1>
-                <form id="contact-form" action="http://httpbin.org/post" method="post">
+                <form id="contact-form" action="https://formspree.io/g.psarakis3800@gmail.com" method="post">
                     <div class="field">
                         <label class="label">Name</label>
                         <p class="control">
@@ -120,7 +122,7 @@
                     <div class="field">
                         <label class="label">Email</label>
                         <p class="control">
-                            <input class="input" type="email" placeholder="Enter Your Email Here">
+                            <input class="input" type="email" name="_replyto" placeholder="Enter Your Email Here">
                         </p>
                     </div>
                     <div class="field">
@@ -138,12 +140,26 @@
             </div>
 
         </section>
-        <section class="foot" id="foot">
-            <div class="section-content">
-                <h1>footer</h1>
+        <footer class="footer">
+            <div class="container">
+                <div class="columns content">
+                    <div class="column is-one-third">
+                        <p>Copyright&copy Georgios Psarakis <script>document.write(new Date().getFullYear())</script></p>
+                    </div>
+                    <div class="column is-one-third">
+                    </div>
+                    <div class="column is-one-third">
+                        <h4>Social Links</h4>
+                        <p class="social-links">
+                            <span class="icon"><i class="fa fa-github"></i></span>
+                            <a href="https://github.com/GeorgiosP" alt="github link">GeorgiosP</a>
+                            <span class="icon"><i class="fa fa-linkedin"></i></span>
+                            <a href="https://www.linkedin.com/in/georgios-psarakis-5b4609122/" alt="linkedin link">GeorgiosP</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-
-        </section>
+        </footer>
 
 
         <script src="./scripts/sidenav.js"></script>
