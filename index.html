@@ -21,7 +21,12 @@
     <div id="body-wrapper">
         <nav id="nav">
 
-            <ul class="pageNav">
+            <ul id="left" class="pageNav nav-left">
+
+                <li><a id="homeLogo" class="navButton" href="#home"><img id="myLogo" src="assets/images/logo.png" alt="My Logo"></a></li>
+            </ul>
+
+            <ul class="pageNav nav-right">
                 <li><a class="navButton" id="homeLink" href="#home">Home</a></li>
                 <li><a class="navButton" id="aboutLink" href="#about">About</a></li>
                 <li><a class="navButton" id="skillsLink" href="#skills">Skills</a></li>
@@ -64,9 +69,8 @@
                 </div>
 
                 <div class="column">
-                    <p id="AboutMePara">Welcome To My Portfolio! Here is abit about myself, I have a keen
-                        eye for software development, I'm always looking to brush up on my design skills, and love to develop
-                        everything JavaScript!</p>
+                    <p id="AboutMePara">Welcome To My Portfolio! Here is abit about myself, I have a keen eye for software development, I'm always
+                        looking to brush up on my design skills, and love to develop everything JavaScript!</p>
                     <small>Project managment and version control included</small>
                 </div>
             </div>
@@ -144,7 +148,11 @@
             <div class="container">
                 <div class="columns content">
                     <div class="column is-one-third">
-                        <p>Copyright&copy Georgios Psarakis <script>document.write(new Date().getFullYear())</script></p>
+                        <p>Copyright&copy Georgios Psarakis
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                        </p>
                     </div>
                     <div class="column is-one-third">
                     </div>

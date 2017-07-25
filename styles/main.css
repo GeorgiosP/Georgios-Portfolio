@@ -73,6 +73,20 @@ section .section-content {
 
 /*Nav Section*/
 
+img#myLogo {
+    padding: 0% 40% 0% 40%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+img#myLogo:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -100,7 +114,11 @@ nav .pageNav li {
 
 nav .pageNav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+ul#left {
+    justify-content: space-between;
 }
 
 li a {
@@ -206,7 +224,6 @@ h1.section-title {
 /*Skills section*/
 
 section.skills {
-   
     background: rgba(7, 28, 127, 0.4);
     transform: rotate(-4deg) scale(1.2);
     padding: 15% 5% 15% 5%;
@@ -250,9 +267,7 @@ ul.skills-list {
 /*Projects section*/
 
 section.projects {
-    
     padding: 15% 5% 15% 5%;
-
 }
 
 
@@ -268,16 +283,15 @@ section.about {
     padding: 2% 0% 7% 0%;
 }
 
+
 /* Contact form  */
 
 section.contact {
-    
     background: rgba(7, 209, 178, 0.4);
     transform: rotate(4deg) scale(1.2);
     padding: 15% 5% 15% 5%;
     overflow: hidden;
 }
-
 
 h1#contact {
     transform: rotate(-4deg);
@@ -320,6 +334,7 @@ button#form-submit:hover {
 
 
 /*Fotoer styles*/
-section.foot{
+
+section.foot {
     margin: 0rem 0rem 0rem 0rem;
 }
