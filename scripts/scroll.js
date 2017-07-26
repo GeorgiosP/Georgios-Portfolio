@@ -36,6 +36,7 @@ function doScrolling(element, duration) {
   })
 }
 
+
 document.getElementById('contactMe').addEventListener('click', doScrolling.bind(null, '#contact', 800))
 document.getElementById('homeLink').addEventListener('click', doScrolling.bind(null, '#home', 800))
 document.getElementById('homeLogo').addEventListener('click', doScrolling.bind(null, '#home', 800))
