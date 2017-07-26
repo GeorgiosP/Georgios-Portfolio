@@ -115,6 +115,7 @@ nav .pageNav li {
 nav .pageNav {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 ul#left {
@@ -268,6 +269,20 @@ ul.skills-list {
 
 section.projects {
     padding: 15% 5% 15% 5%;
+}
+ul.projects-list{
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 40px 0 40px;
+}
+
+.projects-list img{
+    width: 12vw; 
+    height: 12vw;
+
 }
 
 
