@@ -298,7 +298,7 @@ h2.columnHeader {
         font-size: 21pt;
     }
     p.skillsParas {
-    padding-top: 3%;
+    padding: 3% 0% 3% 0;
     width: auto;
     font-weight: 500;
 }
