@@ -324,6 +324,10 @@ ul.projects-list {
     height: 12vw;
 }
 
+.projButton{
+    color: rgba(7, 28, 127, 0.7);
+}
+
 @media screen and (max-width: 825px) {
     .projects-list li {
         flex-basis: 80%;
