@@ -72,6 +72,7 @@ section .section-content {
 
 img#actionShot {
     margin-top: -6%;
+ 
 }
 
 
@@ -192,8 +193,7 @@ li a {
 .sideNav-button {
     position: fixed;
     display: block;
-    bottom: 94%;
-    left: 0%;
+    top: 0;
     padding: 15px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 2px;
