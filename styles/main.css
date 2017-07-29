@@ -191,7 +191,7 @@ li a {
 
 .sideNav-button {
     position: fixed;
-    display: flex;
+    display: block;
     bottom: 94%;
     left: 0%;
     padding: 15px;
