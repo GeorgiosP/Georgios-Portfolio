@@ -72,7 +72,6 @@ section .section-content {
 
 img#actionShot {
     margin-top: -6%;
- 
 }
 
 
@@ -235,7 +234,6 @@ section.skills {
     padding: 15% 5% 15% 5%;
 }
 
-
 div.skills {
     transform: rotate(4deg);
 }
@@ -281,7 +279,9 @@ h2.columnHeader {
     font-weight: 800;
 }
 
+
 /* mobile styles */
+
 @media screen and (max-width: 1072px) {
     section.skills {
         background: rgba(7, 28, 127, 0.4);
@@ -290,7 +290,6 @@ h2.columnHeader {
     }
     div.skills {
         transform: rotate(0deg);
-     
     }
     h1#skills {
         transform: rotate(0deg);
@@ -298,11 +297,10 @@ h2.columnHeader {
         font-size: 21pt;
     }
     p.skillsParas {
-    padding: 3% 0% 3% 0;
-    width: auto;
-    font-weight: 500;
-}
-
+        padding: 3% 0% 3% 0;
+        width: auto;
+        font-weight: 500;
+    }
 }
 
 
@@ -321,16 +319,20 @@ ul.projects-list {
     padding: 0 40px 0 40px;
 }
 
-@media screen and (max-width: 900px) {
-    .projects-list li {
-        flex-basis: 50%;
-        padding: 3%;
-    }
-}
-
 .projects-list img {
     width: 12vw;
     height: 12vw;
+}
+
+@media screen and (max-width: 825px) {
+    .projects-list li {
+        flex-basis: 80%;
+        padding: 6%;
+    }
+    .projects-list img {
+        width: 27vw;
+        height: 27vw;
+    }
 }
 
 
@@ -342,8 +344,8 @@ p#AboutMePara {
     font-size: 24pt;
 }
 
-@media screen and (max-width: 900px){
-    p#AboutMePara{
+@media screen and (max-width: 900px) {
+    p#AboutMePara {
         font-size: auto;
     }
 }
