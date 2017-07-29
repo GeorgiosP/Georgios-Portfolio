@@ -235,6 +235,7 @@ section.skills {
     padding: 15% 5% 15% 5%;
 }
 
+
 div.skills {
     transform: rotate(4deg);
 }
@@ -264,8 +265,8 @@ ul.skills-list {
 }
 
 .skills-list img {
-    width: 12vw;
-    height: 12vw;
+    width: 200px;
+    height: 200px;
     border-radius: 50% 50%;
 }
 
@@ -278,6 +279,30 @@ p.skillsParas {
 h2.columnHeader {
     padding-bottom: 3%;
     font-weight: 800;
+}
+
+/* mobile styles */
+@media screen and (max-width: 1072px) {
+    section.skills {
+        background: rgba(7, 28, 127, 0.4);
+        transform: rotate(0deg) scale(1.2);
+        padding: 15% 5% 15% 5%;
+    }
+    div.skills {
+        transform: rotate(0deg);
+     
+    }
+    h1#skills {
+        transform: rotate(0deg);
+        padding-bottom: 30px;
+        font-size: 21pt;
+    }
+    p.skillsParas {
+    padding-top: 3%;
+    width: auto;
+    font-weight: 500;
+}
+
 }
 
 
@@ -315,6 +340,12 @@ p#AboutMePara {
     padding-top: 3rem;
     font-weight: 500;
     font-size: 24pt;
+}
+
+@media screen and (max-width: 900px){
+    p#AboutMePara{
+        font-size: auto;
+    }
 }
 
 section.about {
